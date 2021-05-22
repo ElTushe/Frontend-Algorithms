@@ -4,7 +4,7 @@ function convertFahrToCelsius(temperature) {
     let Fahr = Object.prototype.toString.call(temperature);
 
     if (Fahr === "[Object.Number]" || (Fahr === "[Object String]" && !isNaN(Temperature))){
-        return Celsius;
+        return Celsius.toFixed(4);
     }
     else {
         let paramtype = Fahr.split("");
@@ -13,6 +13,8 @@ function convertFahrToCelsius(temperature) {
         return `${JSON.stringify(Temperature)} is not a valid number but a/an ${paramtype[1]}`;
     }
 }
+
+
     
 function checkYuGiOh() {
 
